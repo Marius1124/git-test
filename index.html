@@ -3,10 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github undervisning</title>
+    <title>Favorite Coffee</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Github undervisning</h1>
-    <h2>Introduksjon</h2>
+    <header>
+      <h1>What is your favorite coffee?</h1>
+      <h2>A simple test</h2>
+    </header>
+    <br />
+    <div class="container">
+      <div class="image"></div>
+      <div class="text"></div>
+    </div>
+    <main>
+      <img
+        src="./images/kaffi.jpg"
+        alt="Picture of Coffee"
+        class="center"
+        width="100"
+        height="400"
+      />
+      <br />
+      <section>
+        <fieldset>
+          <legend>Do you like or dislike coffee?</legend>
+          <label
+            ><input
+              id="like"
+              type="radio"
+              name="like-dislike"
+              value="like"
+              checked
+            />
+            I enjoy coffee</label
+          >
+          <label
+            ><input
+              id="dislike"
+              type="radio"
+              name="like-dislike"
+              value="dislike"
+            />
+            I dislike coffee</label
+          >
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>What's your favorite type of coffee?</legend>
+          <p>Multiple options allowed</p>
+          <label for="americano">Americano</label>
+          <input
+            id="americano"
+            type="checkbox"
+            name="coffee brands"
+            value="americano"
+            checked
+          />
+          <label for="cappucino">Cappucino</label>
+          <input
+            id="cappucino"
+            type="checkbox"
+            name="coffee brands"
+            value="cappucino"
+          />
+          <label for="espresso">Espresso</label>
+          <input
+            id="espresso"
+            type="checkbox"
+            name="coffee brands"
+            value="espresso"
+          />
+          <br />
+          <label for="espresso">Macchiato</label>
+          <input
+            id="espresso"
+            type="checkbox"
+            name="coffee brands"
+            value="espresso"
+          />
+          <label for="espresso">Mocha</label>
+          <input
+            id="espresso"
+            type="checkbox"
+            name="coffee brands"
+            value="espresso"
+          />
+          <label for="espresso">Latte</label>
+          <input
+            id="espresso"
+            type="checkbox"
+            name="coffee brands"
+            value="espresso"
+          />
+          <br />
+          <label for="none">None of the above</label>
+          <input
+            id="espresso"
+            type="checkbox"
+            name="coffee brands"
+            value="espresso"
+          />
+        </fieldset>
+        <br />
+        <button type="submit" class="center">Submit</button>
+      </section>
+    </main>
+    <br />
+    <footer>No Copyright Marius</footer>
   </body>
 </html>
